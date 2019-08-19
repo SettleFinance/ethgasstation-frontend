@@ -15,8 +15,9 @@
     
     <meta property="og:title" content="<?php echo EGS_TITLE; ?>" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="images/ETHGasStation.png" />
-    <meta property="og:url" content="https://<?php echo EGS_HOSTNAME; ?>" />
+    <meta property="og:image" content="https://ethgasstation.info/images/ETHGasStation.png" />
+    <meta property="og:description" content="ETH gas price recommendations." />
+    <meta property="og:url" content="https://ethgasstation.info/" />
 
 
     <!-- Bootstrap -->
@@ -54,7 +55,7 @@
     </script>
 
     <!-- Custom Theme Style -->
-    <link href="build/css/custom.css" rel="stylesheet">
+    <link href="build/css/custom.css?d=3" rel="stylesheet">
     <?php include 'build/php/minerT_py.php'; ?>
 
    
@@ -64,32 +65,16 @@
 
   <body class="nav-md">
   <?php include 'unofficial.php'; ?>
-    <div class="container body">
+    <div class="container body gas_burner_body">
       <div class="main_container">
 
         <?php include 'sidebar.php'; ?>   
-
-        <!-- top navigation -->
-        <div class="top_nav">
-          <div class="nav_menu">
-            <nav>
-              <div class="nav toggle">
-                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
-              </div>
-              <ul class="nav navbar-nav navbar-right">
-              <p class="navbar-text navbar-left" style="padding-left: 5px"><strong><?php echo "Stats over last 5,000 blocks - Last update: Block <span style = 'color:#1ABB9C'> $latestBlock" ?></strong></span>  
-              </p>
-            </ul>
-            </nav>
-          </div>
-         </div>
-
-        <!-- /top navigation -->
+        <?php include '_simple_header.php'; ?>
 
         <!-- page content -->
         <div class="right_col" role="main">
           <div class="row">
-              <div class="col-md-8 col-sm-8 col-xs-12">
+              <div class="col-md-12 col-sm-12 col-xs-12 gas_burners">
                 <div class="x_panel tile fixed_height_420">
                   <div class="x_title">
                     <h4>Top 10 ETH Contracts By Transaction Count Over Last 1,500 Blocks</h4>
@@ -133,14 +118,7 @@
              
 <!-- /page content -->
 
-        <!-- footer content -->
-        <footer>
-          <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
-          </div>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
+        <?php include '_footer.php'; ?>
 
       </div>
     </div>

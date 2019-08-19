@@ -15,8 +15,9 @@
     
     <meta property="og:title" content="<?php echo EGS_TITLE; ?>" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="images/ETHGasStation.png" />
-    <meta property="og:url" content="https://<?php echo EGS_HOSTNAME; ?>" />
+    <meta property="og:image" content="https://ethgasstation.info/images/ETHGasStation.png" />
+    <meta property="og:description" content="ETH gas price recommendations." />
+    <meta property="og:url" content="https://ethgasstation.info/" />
 
 
     <!-- Bootstrap -->
@@ -50,15 +51,16 @@
 
     <script type="text/javascript" src="speedometer/xcanvas.js"></script>
     <script type="text/javascript" src="speedometer/tbe.js"></script>
-
     <script type="text/javascript" src="speedometer/digitaldisplay.js"></script>
     <script type="text/javascript" src="speedometer/speedometer.js"></script>
     <script type="text/javascript" src="speedometer/themes/default.js"></script>
     <script type="text/javascript" src="speedometer/controls.js"></script>
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link href="build/css/custom.css?d=7" rel="stylesheet">
+    <link href="build/css/custom.css?d=24" rel="stylesheet">
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134672026-1"></script>
@@ -77,188 +79,134 @@
     <div class="container body">
       <div class="main_container">
       <?php include 'sidebar.php'; ?>
-        <!-- top navigation starts -->
-        <div class="top_nav">
-          <div class="nav_menu">
-            <nav>
-              <div class="nav toggle">
-                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
-              </div>
-
-              <ul class="nav navbar-nav navbar-right">
-                <li class="social_link">
-                    <a href="https://discord.gg/mzDxADE" target="_blank">
-                      <img class="social_icon" src="/images/discord.svg"></a>
-                </li>
-
-                <li class="social_link">
-                    <a href="https://twitter.com/ethgasstation" target="_blank"><img class="social_icon" src="/images/twitter.svg"></a>
-                </li>
-                
-                <li class="dropdown">
-                  <a href="#" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-globe"></i><span style="color:#768399"> Change Currency</span>
-                    <span class=" fa fa-angle-down"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li id="usd"><a href="#"> USD<?php if($currency=='usd'){echo'<span class="pull-right"><i class="fa fa-check"></i></span>';}?></a></li>
-                    <li id="eur"><a href="#"> EUR<?php if($currency=='eur'){echo'<span class="pull-right"><i class="fa fa-check"></i></span>';}?></a></li>
-                    <li id="gbp"><a href="#"> GBP<?php if($currency=='gbp'){echo'<span class="pull-right"><i class="fa fa-check"></i></span>';}?></a></li>
-                    <li id="cny"><a href="#"> CNY<?php if($currency=='cny'){echo'<span class="pull-right"><i class="fa fa-check"></i></span>';}?></a></li>
-                  </ul>
-                </li>
-
-              <p class="navbar-text navbar-left" style="padding-left: 5px"><strong><?php echo "Estimates over last 1,500 blocks - Last update: Block <span style = 'color:#1ABB9C'> $latestblock" ?></strong></span>  
-              </p>
-            </ul>
-            </nav>
-          </div>
-         </div>
-        <!-- /top navigation ends -->
+      <?php include '_header.php'; ?>
 
         <!-- page content starts -->
-        <div class="right_col" role="main">
-          <!-- top tiles start -->
+        <div class="right_col page_content_container" role="main">
+          <div class="page_content">
+            <!-- top tiles start -->
             <div class="row tile_count">
               <div class="rgp">
-                <h2 class="top_tiles_title">Recommended Gas Prices in Gwei</h2>
+                <div class="top_tiles_title">Recommended Gas Prices in Gwei</div>
                 <div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count">
-                  <div class="count fast">
-                    <?php echo ($gpRecs2['fast']/10) ?>
-                  </div>
-                  <div class="text-container">
-                    <div class="count_top">fast (<2m)</div>
-                    <div class="count_top">
-                      <?php $fee = round($gpRecs2['fast']*21000/1e9*$exchangeRate/10, 3); echo($currString . $fee . '/transfer'); ?>
+                  <div>
+                    <div class="count fast">
+                      <?php echo ($gpRecs2['fast']/10) ?>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="text-container">
+                      <div class="count_top"><span>fast</span><span>< 2m</span></div>
+                      <div class="count_top usd">
+                        <?php $fee = round($gpRecs2['fast']*21000/1e9*$exchangeRate/10, 3); echo($fee . ' / Transfer'); ?>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count">
-                  <div class="count standard">
-                    <?php echo ($gpRecs2['average']/10) ?>
-                  </div>
-                  <div class="text-container">
-                    <div class="count_top">standard (<5m)</div>
-                    <div class="count_top">
-                      <?php $fee = round($gpRecs2['average']*21000/1e9*$exchangeRate/10, 3); echo($currString . $fee . '/transfer'); ?>
+                  <div>
+                    <div class="count standard">
+                      <?php echo ($gpRecs2['average']/10) ?>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="text-container">
+                      <div class="count_top"><span>standard</span><span>< 5m</span></div>
+                      <div class="count_top usd">
+                        <?php $fee = round($gpRecs2['average']*21000/1e9*$exchangeRate/10, 3); echo($fee . ' / Transfer'); ?>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count">
-                  <div class="count safe_low" id="medTx">
-                    <?php echo ($gpRecs2['safeLow']/10) ?>
-                  </div>
-                  <div class="text-container">
-                    <div class="count_top">safe low (<30m)</div>
-                    <div class="count_top">
-                      <?php $fee = round($gpRecs2['safeLow']*21000/1e9*$exchangeRate/10, 3); echo($currString . $fee . '/transfer'); ?>
+                  <div>
+                    <div class="count safe_low" id="medTx">
+                      <?php echo ($gpRecs2['safeLow']/10) ?>
                     </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="mwt">
-                <h2 class="top_tiles_title">Median Wait Times</h2>
-                <div class="col-md-6 col-sm-6 col-xs-6 tile_stats_count">
-                  <div class="count"><?php echo (round($medianwaitsec)) ?></div>
-                  <div class="text-container">
-                    <div class="count_top">seconds</div>
-                  </div>
-                </div>
-                 <div class="col-md-6 col-sm-6 col-xs-6 tile_stats_count">
-                  <div class="count">
-                    <?php echo "$medianwaitblock" ?>
-                  </div>
-                  <div class="text-container">
-                    <div class="count_top">blocks</div>
+                    <div class="divider"></div>
+                    <div class="text-container">
+                      <div class="count_top"><span>safe low</span><span>< 30m</span></div>
+                      <div class="count_top usd">
+                        <?php $fee = round($gpRecs2['safeLow']*21000/1e9*$exchangeRate/10, 3); echo($fee . ' / Transfer'); ?>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           <!-- /top tiles end -->
 
+          <!-- blogpost starts -->
+            <div class="row table_row blogPost">
+              <div class="col-md-12 col-sm-12 col-xs-12 table-cell">
+                <div class="x_panel tile table_cell">
+                  <div class="x_title blog_header">
+                    <div class="title">
+                      <?php require('./blogPost.php'); ?>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!--/blogpost ends -->
+
           <!-- 2nd row starts -->
             <div class="row table_row">
-              <!-- Gas Price Estimator starts -->
-                <div class="col-md-8 col-sm-8 col-xs-12">
-                  <div class="x_panel tile table_cell">
-                     <div class="x_title">
-                        <h4 class="gas_estimator_title">Gas-Time-Price Estimator: <small>For transactions sent at block: <?php echo($gpRecs2['blockNum']);?></small></h4>
-                        <div class="clearfix"></div>
-                     </div>
-                     <div class="x_content">
-                      <p>Adjust confirmation time</p>
-                      <div id="slider" class="positionable" ></div>
-                      </br>
-                      </br>
-                      <form class="form-horizontal form-label-left input_mask gas_estimator_form">
-                        <div class="form-group">
-                          <label class="control-label col-md-3 col-sm-3 col-xs-12">Avg Time (min)</label>
-                          <div class="col-md-3 col-sm-3 col-xs-12">
-                            <input type="number" class="form-control" readonly = "readonly" placeholder= <?php echo ($predictTable[$avgRef]['expectedTime']); ?> id="timeToConfirm"> 
-                          </div>
-                          <label class="control-label col-md-3 col-sm-3 col-xs-12">Gas Used<span class="required">*</span></label>
-                          <div class="col-md-3 col-sm-3 col-xs-12">
-                            <input type="number" class="form-control" value="21000" id="gas_used">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="control-label col-md-3 col-sm-3 col-xs-12">95% Time (min)</label>
-                          <div class="col-md-3 col-sm-3 col-xs-12">
-                            <input type="number" class="form-control" readonly = "readonly" placeholder= <?php echo round(($predictTable[$avgRef]['expectedTime']*2.5),2); ?> id="maxTimeToConfirm"> 
-                          </div>
-                          <label class="control-label col-md-3 col-sm-3 col-xs-12">Avg Time (blocks)</label>
-                          <div class="col-md-3 col-sm-3 col-xs-12">
-                            <input type="number" class="form-control" readonly = "readonly" placeholder= <?php echo ($predictTable[$avgRef]['expectedWait']); ?> id="blocksToConfirm"> 
-                          </div>
-                          
-                        </div>
-                        <div class="form-group">
-                          <label class="control-label col-md-3 col-sm-3 col-xs-12">Gas Price (Gwei)<span class="required">*</span></label>
-                          <div class="col-md-3 col-sm-3 col-xs-12">
-                            <input type="number" class="form-control" readonly = "readonly" value=<?php echo ($gpRecs2['average']/10)?> id="gasPrice">
-                          </div>
-                          <label class="control-label col-md-3 col-sm-3 col-xs-12">95% Time (blocks)</label>
-                          <div class="col-md-3 col-sm-3 col-xs-12">
-                            <input type="number" class="form-control" readonly = "readonly" placeholder= <?php echo ($predictTable[$avgRef]['expectedWait']*2.5); ?> id="maxBlocksToConfirm"> 
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="control-label col-md-3 col-sm-3 col-xs-12">Tx Fee (Fiat)</label>
-                          <div class="col-md-3 col-sm-3 col-xs-12">
-                            <input type="text" class="form-control" readonly = "readonly" placeholder= <?php $fee = round($gpRecs2['average']*21000/1e10*$exchangeRate, 3); echo($currString . $fee); ?> id="fiatFee"> 
-                          </div> 
-                          <label class="control-label col-md-3 col-sm-3 col-xs-12">Tx Fee (ETH)</label>
-                          <div class="col-md-3 col-sm-3 col-xs-12">
-                            <input type="number" class="form-control" readonly = "readonly" placeholder = <?php $fee = $gpRecs2['average']*21000/1e10; echo (number_format($fee, 5)); ?> id="ethFee"> 
-                          </div>  
-                        </div>
-                      </form>
-                      <div class="clearfix"></div>
-                  </div>
-                </div>
-                </div>
-              <!-- Gas Price Estimator ends -->
-
-              <!-- blogpost starts -->
-                <div class="col-md-4 col-sm-4 col-xs-12 table-cell">
-                  <div class="x_panel tile table_cell">
-                    <div class="x_title blog_header">
-                      <p>EGS Blog</p>
-                      <div class="clearfix"></div>
+              <!-- leaderboard starts -->
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="leaderboard">
+                      <div class="header">
+                        <div class="title">ETH25<span> Leaderboard</span></div>
+                        <div class="small_text">Last 30 Days</div>
+                      </div>
+                      <div class="leading_projects">
+                        <table style="">
+                            <thead>
+                              <tr>
+                                  <th><span>Rank</span><span>#</span></th>
+                                  <th>Name</th>
+                                  <th>ETH Spent</th>
+                                  <th>Ave. Gwei</th>
+                                  <th><span>USD</span>Value</th>
+                              </tr>
+                            </thead>
+                              
+                            <tbody>
+                                <?php require('./topProjects.php'); ?>
+                            </tbody>
+                        </table>
+                      </div>
                     </div>
-                    <div class="x_content" id="blogPost">
-                     <?php require('./blogPost.php'); ?>
-                    </div>
-                  </div>
+                    <div class="powered_by">Powered by <a href="https://dappdir.com/" target="_black">DappDir</a></div>
                 </div>
-              <!--/blogpost ends -->
+              <!-- leaderboard ends -->
             </div>
           <!-- 2nd row ends -->
 
+          <div class="gas_internals">
+            <div class="big_title">Gas Internals</div>
+            <div class="mwt">
+              <h2 class="top_tiles_title">Median Wait Times</h2>
+              <div class="tile_stats_count">
+                <div class="count"><?php echo (round($medianwaitsec)) ?></div>
+                <div class="text-container">
+                  <div class="count_top">seconds</div>
+                </div>
+              </div>
+               <div class="tile_stats_count">
+                <div class="count">
+                  <?php echo $medianwaitblock ?>
+                </div>
+                <div class="text-container">
+                  <div class="count_top">blocks</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- 3rd row starts -->
-            <div class="row table_row">
+            <div class="row table_row" style="clear: both;">
+
               <!-- Transactions by Gas Price -->
                 <div class="col-md-4 col-sm-4 col-xs-12">
                   <div class="x_panel tile table_cell">
@@ -287,20 +235,21 @@
                   </div>
               <!-- Confirmation Time by Gas Price -->
 
-              <!-- Speedometer -->
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                  <div class="x_panel tile table_cell">
-                    <div class="x_title">
-                      <h4>Real Time Gas Use: <small> Block Limit (last 10)</small></h4>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="x_content sMeter">
-                        <div id="speedometer" class="speedometer"></div>
-                        <p id="blockNum">Last Block: </p> 
+              <!-- Speedometer starts -->
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="x_panel tile table_cell">
+                      <div class="x_title">
+                        <h4>Real Time Gas Use</h4>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="x_content sMeter">
+                          <div id="speedometer" class="speedometer"></div>
+                          <p id="blockNum">Last Block: </p> 
+                      </div>
                     </div>
                   </div>
-                </div>
-              <!--/Speedometer -->
+              <!--/Speedometer ends -->
+              
               <div class="clearfix"></div>
             </div>
           <!-- 3rd row ends -->
@@ -315,7 +264,7 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
-                      <table class="table table_data table-bordered">
+                      <table class="table table_data table-bordered" style="margin-left: -18px;">
                           <thead>
                             <tr>
                               <th>Miner</th>
@@ -357,6 +306,7 @@
                   </div>
                 </div>
               <!-- /miner rankings -->
+
               <!-- Misc Transaction Table -->
                   <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="x_panel tile table_cell">
@@ -409,24 +359,14 @@
                     </div>
                   </div>
               <!-- /misc transactions -->
+              
             </div>
           <!-- 4th row ends -->
+          </div>
         </div>           
       <!-- /page content ends -->
 
-      <!-- footer content -->
-        <footer>
-          <div class='eth_footer_links'>
-            <a href="https://docs.ethgasstation.info" target="_blank">API</a>
-            <a href="https://ethgasstation.info/feedback.html" target="_blank">Feedback</a>
-            <a href="https://twitter.com/ethgasstation" target="_blank">Twitter</a>
-            <a href="https://discord.gg/mzDxADE" target="_blank">Discord</a>
-          </div>
-       
-          <div class="concourse_link"><a href="https://concourseopen.com" target="_blank">Concourse Open Construction</a></div>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
+      <?php include '_footer.php'; ?>
 
       </div>
     </div>
@@ -657,12 +597,24 @@
 
 
 
- </script>
+  </script>
 
+  <script src="build/js/custom3.js"></script>
+  <script>
+    tippy('span.top_project', {
+      arrow: true,
+      interactive: true,
+      placement: 'right',
+      content(reference) {
+        var id = reference.getAttribute('data-template');
+        var container = document.createElement('div');
+        var linkedTemplate = document.getElementById(id);
+        var node = document.importNode(linkedTemplate.content, true);
+        container.appendChild(node);
 
-
-    <script src="build/js/custom3.js"></script>
-    
-	
+        return container;
+      }
+    });
+  </script>	
   </body>
 </html>
