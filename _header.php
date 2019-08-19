@@ -8,11 +8,11 @@
         <div class="header_left_contents">
           <div  class="social_links">
             <div class="social_link">
-                <a href="https://discord.gg/mzDxADE" target="_blank"><img class="social_icon primary" src="/images/discord.svg"></a>
+                <a href="https://discord.gg/mzDxADE" target="_blank"><img class="social_icon primary" src="/images/discord.svg?refresh=true"></a>
                 <a href="https://discord.gg/mzDxADE" target="_blank"><img class="social_icon secondary" src="/images/discord-green.svg"></a>
             </div>
             <div class="social_link">
-                <a href="https://twitter.com/ethgasstation" target="_blank"><img class="social_icon primary" src="/images/twitter.svg"></a>
+                <a href="https://twitter.com/ethgasstation" target="_blank"><img class="social_icon primary" src="/images/twitter.svg?refresh=true"></a>
                 <a href="https://twitter.com/ethgasstation" target="_blank"><img class="social_icon secondary" src="/images/twitter-green.svg"></a>
             </div>
           </div>
