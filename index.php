@@ -167,7 +167,22 @@
                                   <th>Name</th>
                                   <th>ETH Spent</th>
                                   <th>Ave. Gwei</th>
-                                  <th><span>USD </span>Value</th>
+                                  <th>
+                                    <span>
+                                      <?php
+                                        if ($currency == 'eur') {
+                                          echo "EUR ";
+                                        } elseif ($currency == 'cny') {
+                                          echo "CNY ";
+                                        } elseif ($currency == 'gbp') {
+                                          echo "GBP ";
+                                        } else {
+                                          echo "USD ";
+                                        }
+                                      ?>
+                                    </span>
+                                    Value
+                                  </th>
                               </tr>
                             </thead>
                               
