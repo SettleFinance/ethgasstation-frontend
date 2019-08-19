@@ -4492,6 +4492,13 @@ ul.notifications {
   margin: auto;
 
 }
+.blog_post_title {
+    width: calc(100% - 230px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
 
 
 			
