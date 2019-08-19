@@ -167,7 +167,7 @@
                                   <th>Name</th>
                                   <th>ETH Spent</th>
                                   <th>Ave. Gwei</th>
-                                  <th><span>USD</span>Value</th>
+                                  <th><span>USD </span>Value</th>
                               </tr>
                             </thead>
                               
