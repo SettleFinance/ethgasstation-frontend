@@ -4654,6 +4654,8 @@ ul.notifications {
 }
 .spam_reference_link {
     color: red;
+	pointer-events: none;
+    cursor: default;
 }
 .mwt {
     color: #888989;
@@ -4773,7 +4775,11 @@ ul.notifications {
 }
 
 @media(max-width:415px) {
-    .page_content_container .page_content, .rgp {
+	.rgp {
+		margin-left: 0 !important;
+		padding-left: 10px !important;
+	}
+    .page_content_container .page_content {
         margin-left: 0 !important;
     }
     .top_nav .header_left_contents {
