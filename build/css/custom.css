@@ -480,6 +480,7 @@ body .container.body .right_col {
 .container {
     width: 100%;
     padding: 0;
+    overflow-x: hidden;
 }
 .container.calculator, .main_container.calculator, .container.tx_pool, .main_container.tx_pool {
     height: 100%;
