@@ -4773,7 +4773,7 @@ ul.notifications {
 }
 
 @media(max-width:415px) {
-    .page_content_container .page_content {
+    .page_content_container .page_content, .rgp {
         margin-left: 0 !important;
     }
     .top_nav .header_left_contents {
