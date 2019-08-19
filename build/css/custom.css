@@ -4773,12 +4773,12 @@ ul.notifications {
         max-width: 800px;
     }
 }
-
-@media(max-width:415px) {
-	.rgp {
+.rgp {
 		margin-left: 0 !important;
 		padding-left: 10px !important;
 	}
+@media(max-width:415px) {
+	
     .page_content_container .page_content {
         margin-left: 0 !important;
     }
