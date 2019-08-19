@@ -14,7 +14,7 @@
   $decodedData = json_decode($output);
   $link = $decodedData[0]->link;
 
-  if (strpos($link, 'https://ethgasstation.info') == false) {
+  if (strpos($link, 'ethgasstation.info') == false) {
     $link = "https://ethgasstation.info" . $link;
   }
 
