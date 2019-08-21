@@ -4661,8 +4661,6 @@ ul.notifications {
 }
 .spam_reference_link {
     color: red;
-	pointer-events: none;
-    cursor: default;
 }
 .mwt {
     color: #888989;
