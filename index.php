@@ -60,7 +60,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link href="build/css/custom.css?d=28" rel="stylesheet">
+    <link href="build/css/custom.css?d=30" rel="stylesheet">
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134672026-1"></script>
@@ -97,7 +97,7 @@
                     <div class="text-container">
                       <div class="count_top"><span>fast</span><span>< 2m</span></div>
                       <div class="count_top usd">
-                        <?php $fee = round($gpRecs2['fast']*21000/1e9*$exchangeRate/10, 3); echo($fee . ' / Transfer'); ?>
+                        <?php $fee = round($gpRecs2['fast']*21000/1e9*$exchangeRate/10, 3); echo($currString . $fee . ' / Transfer'); ?>
                       </div>
                     </div>
                   </div>
@@ -112,7 +112,7 @@
                     <div class="text-container">
                       <div class="count_top"><span>standard</span><span>< 5m</span></div>
                       <div class="count_top usd">
-                        <?php $fee = round($gpRecs2['average']*21000/1e9*$exchangeRate/10, 3); echo($fee . ' / Transfer'); ?>
+                        <?php $fee = round($gpRecs2['average']*21000/1e9*$exchangeRate/10, 3); echo($currString . $fee . ' / Transfer'); ?>
                       </div>
                     </div>
                   </div>
@@ -127,7 +127,7 @@
                     <div class="text-container">
                       <div class="count_top"><span>safe low</span><span>< 30m</span></div>
                       <div class="count_top usd">
-                        <?php $fee = round($gpRecs2['safeLow']*21000/1e9*$exchangeRate/10, 3); echo($fee . ' / Transfer'); ?>
+                        <?php $fee = round($gpRecs2['safeLow']*21000/1e9*$exchangeRate/10, 3); echo($currString . $fee . ' / Transfer'); ?>
                       </div>
                     </div>
                   </div>
@@ -167,7 +167,22 @@
                                   <th>Name</th>
                                   <th>ETH Spent</th>
                                   <th>Ave. Gwei</th>
-                                  <th><span>USD </span>Value</th>
+                                  <th>
+                                    <span>
+                                      <?php
+                                        if ($currency == 'eur') {
+                                          echo "EUR ";
+                                        } elseif ($currency == 'cny') {
+                                          echo "CNY ";
+                                        } elseif ($currency == 'gbp') {
+                                          echo "GBP ";
+                                        } else {
+                                          echo "USD ";
+                                        }
+                                      ?>
+                                    </span>
+                                    Value
+                                  </th>
                               </tr>
                             </thead>
                               
