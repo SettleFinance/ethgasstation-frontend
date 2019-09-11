@@ -4952,7 +4952,7 @@ ul.notifications {
         margin-left: 0;
     }
     .leaderboard .title {
-        margin-left: 10px;
+        padding-left: 10px;
     }
     .tile_count .tile_stats_count .count {
         font-size: 30px;
