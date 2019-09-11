@@ -1962,7 +1962,7 @@ span.right {
 }
 .tile_stats_count > div {
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 .tile_count .tile_stats_count .count {
     float: left;
@@ -1984,7 +1984,7 @@ span.right {
     margin-left: 5px;
 }
 .tile_stats_count .text-container .count_top.usd {
-    font-size: 20px;
+    font-size: 19px;
     color: #202020;
     font-weight: 600;
 }
@@ -4940,7 +4940,7 @@ ul.notifications {
         max-width: 800px;
     }
     .tile_count .tile_stats_count {
-        width: 230px;
+        width: 225px;
     }
     .tile_count .tile_stats_count:nth-child(3), .tile_count .tile_stats_count:last-child {
         margin-left: 5px;
@@ -4950,5 +4950,17 @@ ul.notifications {
     }
     .tile_stats_count .text-container {
         margin-left: 0;
+    }
+    .leaderboard .title {
+        padding-left: 10px;
+    }
+    .tile_count .tile_stats_count .count {
+        font-size: 30px;
+    }
+    .tile_stats_count .text-container .count_top.usd {
+        font-size: 15px;
+    }
+    .tile_stats_count .text-container .count_top span:first-child, .tile_stats_count .text-container .count_top span:last-child {
+        font-size: 15px;
     }
 }
