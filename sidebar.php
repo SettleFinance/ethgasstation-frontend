@@ -41,10 +41,25 @@
                   </li>
                   <li><a><i class="fa fa-link"></i><span class="link_text">Links</span> <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="https://coincenter.org/entry/what-is-ethereum" target="_blank">What is Ethereum?</a></li>
-                      <li><a href="https://www.ethereum.org/ether" target="_blank">Ethereum FAQ</a></li>
-                      <li><a href="https://media.consensys.net/ethereum-gas-fuel-and-fees-3333e17fe1dc#.krqnhnkav" target="_blank">What is gas?</a></li>
+                      <li><a href="https://concourseopen.com/blog/what-is-ethereum" target="_blank">What is Ethereum?</a></li>
+                      <li><a href="https://concourseopen.com/blog/ethereum-faq" target="_blank">Ethereum FAQ</a></li>
+                      <li><a href="https://ethgasstation.info/blog/what-is-gas" target="_blank">What is gas?</a></li>
+                      <li><a href="https://ethgasstation.info/blog/gwei" target="_blank">What is Gwei?</a></li>
                       <li><a href="https://blog.ethereum.org/2016/10/31/uncle-rate-transaction-fee-analysis/" target="_blank">Gas Market: Advanced reading</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-link"></i><span class="link_text">Ethereum Resources</span> <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="https://defipulse.com" target="_blank">Overview of DeFi at DeFi Pulse</a></li>
+                      <li><a href="https://dex.ag" target="_blank">DEX Aggregation from DEX.AG</a></li>
+                      <li><a href="https://ethhub.io" target="_blank">Ethereum Knowledge Base at EthHub</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-link"></i><span class="link_text">How to's</span><span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="https://ethgasstation.info/blog/how-to-buy-ethereum-how-to-buy-eth" target="_blank">How to buy ETH</a></li>
+                      <li><a href="https://ethgasstation.info/blog/ethereum-transaction-how-long" target="_blank">How long do transactions take?</a></li>
+                      <li><a href="https://ethgasstation.info/blog/stuck-transaction-guide" target="_blank">How to fix pending transactions</a></li>
                     </ul>
                   </li>
                   <li>
