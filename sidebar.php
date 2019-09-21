@@ -45,7 +45,6 @@
                       <li><a href="https://concourseopen.com/blog/ethereum-faq" target="_blank">Ethereum FAQ</a></li>
                       <li><a href="https://ethgasstation.info/blog/what-is-gas" target="_blank">What is gas?</a></li>
                       <li><a href="https://ethgasstation.info/blog/gwei" target="_blank">What is Gwei?</a></li>
-                      <li><a href="https://blog.ethereum.org/2016/10/31/uncle-rate-transaction-fee-analysis/" target="_blank">Gas Market: Advanced reading</a></li>
                       <li class="submenu">
                         <a><span>Ethereum Resources</span> <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
