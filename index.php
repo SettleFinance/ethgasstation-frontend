@@ -614,7 +614,7 @@
 
   </script>
 
-  <script src="build/js/custom3.js"></script>
+  <script src="build/js/custom3.js?d=1"></script>
   <script>
     tippy('span.top_project', {
       arrow: true,
