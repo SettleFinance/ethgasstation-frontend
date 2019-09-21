@@ -46,7 +46,7 @@
                       <li><a href="https://ethgasstation.info/blog/what-is-gas" target="_blank">What is gas?</a></li>
                       <li><a href="https://ethgasstation.info/blog/gwei" target="_blank">What is Gwei?</a></li>
                       <li><a href="https://blog.ethereum.org/2016/10/31/uncle-rate-transaction-fee-analysis/" target="_blank">Gas Market: Advanced reading</a></li>
-                      <li>
+                      <li class="submenu">
                         <a><span>Ethereum Resources</span> <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                           <li><a href="https://defipulse.com" target="_blank">Overview of DeFi at DeFi Pulse</a></li>
@@ -54,7 +54,7 @@
                           <li><a href="https://ethhub.io" target="_blank">Ethereum Knowledge Base at EthHub</a></li>
                         </ul>
                       </li>
-                      <li>
+                      <li class="submenu">
                         <a><span>How to's</span><span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                           <li><a href="https://ethgasstation.info/blog/how-to-buy-ethereum-how-to-buy-eth" target="_blank">How to buy ETH</a></li>

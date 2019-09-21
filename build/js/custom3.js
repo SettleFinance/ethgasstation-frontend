@@ -97,6 +97,12 @@ var setContentHeight = function () {
                 setContentHeight();
             });
         }
+
+        /* close siblings in case of submenu */
+        if ($li.is('.submenu')) {
+        	$li.siblings().removeClass('active active-sm');
+        	$li.siblings().find('ul').slideUp();
+        }
     });
 
 // toggle small or large menu 
