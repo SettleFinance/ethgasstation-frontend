@@ -48,7 +48,11 @@
                       <li class="submenu">
                         <a><span>Ethereum Resources</span> <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                          <li><a href="https://defipulse.com" target="_blank">Overview of DeFi at DeFi Pulse</a></li>
+                          <li>
+                            <a href="https://defipulse.com" target="_blank" style="display: inline-block;">DeFi</a>
+                            <span style="cursor: auto;"> - </span>
+                            <a href="https://defipulse.com" target="_blank" style="display: inline-block;">DeFi Pulse</a>
+                          </li>
                           <li><a href="https://dex.ag" target="_blank">DEX Aggregation from DEX.AG</a></li>
                           <li><a href="https://ethhub.io" target="_blank">Ethereum Knowledge Base at EthHub</a></li>
                         </ul>
