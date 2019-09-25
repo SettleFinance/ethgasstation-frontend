@@ -83,14 +83,13 @@ var setContentHeight = function () {
             if (!$li.parent().is('.child_menu')) {
                 $SIDEBAR_MENU.find('li').removeClass('active active-sm');
                 $SIDEBAR_MENU.find('li ul').slideUp();
-            }else
-            {
-				if ( $BODY.is( ".nav-sm" ) )
-				{
+            } else {
+				if ($BODY.is(".nav-sm") && !$li.is('.submenu')) {
 					$SIDEBAR_MENU.find( "li" ).removeClass( "active active-sm" );
 					$SIDEBAR_MENU.find( "li ul" ).slideUp();
 				}
 			}
+			
             $li.addClass('active');
 
             $('ul:first', $li).slideDown(function() {
