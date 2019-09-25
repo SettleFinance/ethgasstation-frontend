@@ -936,7 +936,7 @@ a:focus {
 .nav>li>a {
     position: relative;
     display: block;
-    padding: 16px 15px 16px 20px;
+    padding: 16px 15px 16px 40px;
 }
 .nav.side-menu>li.current-page,
 .nav.side-menu>li.active {
