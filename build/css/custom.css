@@ -4691,6 +4691,19 @@ ul.notifications {
 .about_egs, .faq_calc, .gas_recs, .faq_page {
     margin-left: 50px;
 }
+.joint_links a {
+    display: inline-block !important;
+}
+.joint_links a:first-child {
+    padding-right: 0 !important;
+}
+.joint_links a:last-child {
+    padding-left: 0 !important;
+}
+.joint_links .joint {
+    cursor: auto;
+    color: rgba(255, 255, 255, 0.75);
+}
 
 @media only screen and (max-width: 991px) {
     .tile_count .tile_stats_count .count {
