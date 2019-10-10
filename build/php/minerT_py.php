@@ -18,7 +18,7 @@ $minersArray = json_decode($minerString, true);
 $predictString = get_json_file("predictTable.json");
 $predictArray = json_decode($predictString, true);
 
-$gpRecsString2 = get_json_file("ethgasAPI.json");
+$gpRecsString2 = get_json_file("ethgasAPI-private.json");
 $gpRecs2 = json_decode($gpRecsString2, true);
 $latestBlock = $gpRecs2['blockNum'];
 $bnum = $gpRecs2['blockNum'];

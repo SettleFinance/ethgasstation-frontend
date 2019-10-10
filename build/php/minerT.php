@@ -22,7 +22,7 @@ $minersArray = json_decode($minerString, true);
 $priceString = get_json_file("price3.json");
 $priceArray = json_decode($priceString, true);
 
-$predictString = get_json_file("predictTable.json");
+$predictString = get_json_file("predictTable-private.json");
 $predictArray = json_decode($predictString, true);
 
 $voteString = get_json_file("minerVotes.json");

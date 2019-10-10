@@ -23,10 +23,10 @@ foreach($priceWait as $row)
 $priceWaitData = rtrim($priceWaitData,',');
 $priceWaitLabels = rtrim($priceWaitLabels, ',');
 
-$gpRecsString2 = get_json_file("ethgasAPI.json");
+$gpRecsString2 = get_json_file("ethgasAPI-private.json");
 $gpRecs2 = json_decode($gpRecsString2, true);
 
-$predictString = get_json_file("predictTable.json");
+$predictString = get_json_file("predictTable-private.json");
 $predictTable = json_decode($predictString, true);
 
 $rowString = get_json_file("txDataLast10k.json");

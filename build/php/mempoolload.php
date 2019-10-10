@@ -12,7 +12,7 @@ $memPoolArray = json_decode($memPoolString, true);
 $voteString = get_json_file("vote.json");
 $voteArray = json_decode($voteString, true);
 
-$gp2 = get_json_file("ethgasAPI.json");
+$gp2 = get_json_file("ethgasAPI-private.json");
 $gp2data = json_decode($gp2, true);
 
 
