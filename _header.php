@@ -18,7 +18,7 @@
           </div>
         </div>
 
-        <!-- <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
             <a href="#" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-globe"></i><span class="change_currency_text"> Change Currency <img class='down_arrow' src='/images/down-arrow.svg'></span>
             </a>
@@ -29,7 +29,7 @@
               <li id="cny"><a href="#"> CNY<?php if($currency=='cny'){echo'<span class="pull-right"><i class="fa fa-check"></i></span>';}?></a></li>
             </ul>
           </li>
-      </ul> -->
+      </ul>
       </nav>
     </div>
   </div>
