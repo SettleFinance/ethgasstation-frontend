@@ -60,7 +60,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link href="build/css/custom.css?d=44" rel="stylesheet">
+    <link href="build/css/custom.css?d=46" rel="stylesheet">
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134672026-1"></script>
@@ -149,6 +149,10 @@
               </div>
             </div>
           <!--/blogpost ends -->
+
+          <!-- svg ad section -->
+          <?php require('./adSvg.php'); ?>
+          <!--/svg ad section -->
 
           <!-- 2nd row starts -->
             <div class="row table_row">

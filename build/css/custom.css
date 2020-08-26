@@ -331,6 +331,18 @@ html , body{
     background: #FFFFFF;
     box-shadow: 0 4px 32px 0 rgba(0,0,0,0.08);
 }
+
+/* egs ad */
+.ad-svg-cont img {
+    width: 100%;
+    cursor: pointer;
+}
+.ad-mobile {
+    display: none;
+}
+
+/* end egs ad */
+
 @media (min-width: 480px) {
     .nav_menu {
         position: static
@@ -684,11 +696,6 @@ table.no-margin .progress {
 .col-md-55 {
     width: 50%;
     margin-bottom: 10px
-}
-@media (min-width: 768px) {
-    .col-md-55 {
-        width: 20%
-    }
 }
 @media (min-width: 992px) {
     .col-md-55 {
@@ -1134,16 +1141,6 @@ footer .eth_footer_links a {
     left: 0px;
     bottom: 0px;
     width: 100%
-}
-@media (min-width: 768px) {
-    .footer_fixed footer {
-        margin-left: 0
-    }
-}
-@media (min-width: 768px) {
-    .footer_fixed .nav-sm footer {
-        margin-left: 0
-    }
 }
 .tile-stats.sparkline {
     padding: 10px;
@@ -1948,14 +1945,10 @@ span.right {
     footer {
         margin-left: 240px
     }
-}
-@media (min-width: 992px) {
     .tile_count .tile_stats_count {
         margin-bottom: 10px;
         padding-bottom: 10px
     }
-}
-@media (min-width: 992px) {
     .tile_count .tile_stats_count:first-child:before {
         border-left: 0
     }
@@ -2002,11 +1995,6 @@ span.right {
 }
 .tile_count .tile_stats_count span {
     font-size: 12px
-}
-@media (min-width: 768px) {
-    .tile_count .tile_stats_count span {
-        font-size: 13px
-    }
 }
 .tile_count .tile_stats_count .count_bottom i {
     width: 12px
@@ -2320,12 +2308,6 @@ button,
     padding: 3px 6px;
     font-size: 8px;
     background: #BAB7B7
-}
-@media (max-width: 767px) {
-    .mail_list {
-        margin-bottom: 5px;
-        display: inline-block
-    }
 }
 .mail_heading h4 {
     font-size: 18px;
@@ -2736,6 +2718,18 @@ textarea:focus {
     background-color: #1ABB9C
 }
 @media (min-width: 768px) {
+    .col-md-55 {
+        width: 20%
+    }
+    .footer_fixed footer {
+        margin-left: 0
+    }
+    .footer_fixed .nav-sm footer {
+        margin-left: 0
+    }
+    .tile_count .tile_stats_count span {
+        font-size: 13px
+    }
     .bs-glyphicons {
         margin-right: 0;
         margin-left: 0
@@ -3974,11 +3968,6 @@ fieldset {
     max-height: 516px;
     margin-bottom: 20px
 }
-@media (min-width: 768px) {
-    .cropper .img-container {
-        min-height: 516px
-    }
-}
 .cropper .img-container>img {
     max-width: 100%
 }
@@ -4976,5 +4965,30 @@ ul.notifications {
     }
     .tile_stats_count .text-container .count_top span:first-child, .tile_stats_count .text-container .count_top span:last-child {
         font-size: 15px;
+    }
+}
+
+/* organize css */
+@media(max-width: 840px) {
+    .leaderboard {
+        margin-right: 20px;
+    }
+    .blogPost {
+        margin-right: 10px;
+    }
+    .ad-wrap {
+        margin-right: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .mail_list {
+        margin-bottom: 5px;
+        display: inline-block
+    }
+    .ad-desktop {
+        display: none;
+    }
+    .ad-mobile {
+        display: block;
     }
 }
