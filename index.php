@@ -95,7 +95,7 @@
                     </div>
                     <div class="divider"></div>
                     <div class="text-container">
-                      <div class="count_top"><span>trader</span><span>< 2m</span></div>
+                      <div class="count_top"><span>trader</span><span>< ASAP</span></div>
                       <div class="count_top usd">
                         <?php  $fee = round($gpRecs2['fastest']*21000/1e9*$exchangeRate/10, 3); echo($currString . $fee . ' / Transfer'); ?>
                       </div>
@@ -110,7 +110,7 @@
                     </div>
                     <div class="divider"></div>
                     <div class="text-container">
-                      <div class="count_top"><span>fast</span><span>< 5m</span></div>
+                      <div class="count_top"><span>fast</span><span>< 2m</span></div>
                       <div class="count_top usd">
                         <?php $fee = round($gpRecs2['fast']*21000/1e9*$exchangeRate/10, 3); echo($currString . $fee . ' / Transfer'); ?>
                       </div>
@@ -125,7 +125,7 @@
                     </div>
                     <div class="divider"></div>
                     <div class="text-container">
-                      <div class="count_top"><span>standard</span><span>< 30m</span></div>
+                      <div class="count_top"><span>standard</span><span>< 5m</span></div>
                       <div class="count_top usd">
                         <?php $fee = round($gpRecs2['average']*21000/1e9*$exchangeRate/10, 3); echo($currString . $fee . ' / Transfer'); ?>
                       </div>
