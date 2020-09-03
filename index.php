@@ -95,7 +95,7 @@
                     </div>
                     <div class="divider"></div>
                     <div class="text-container">
-                      <div class="count_top"><span>fastest</span><span>< 2m</span></div>
+                      <div class="count_top"><span>trader</span><span>< 2m</span></div>
                       <!-- <div class="count_top usd">
                         <?php // $fee = round($gpRecs2['fastest']*21000/1e9*$exchangeRate/10, 3); echo($currString . $fee . ' / Transfer'); ?>
                       </div> -->
