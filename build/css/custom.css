@@ -4985,9 +4985,9 @@ ul.notifications {
         margin-bottom: 5px;
         display: inline-block
     }
-    .ad-desktop {
+    /* .ad-desktop {
         display: none;
-    }
+    } */
     .ad-mobile {
         display: block;
     }
