@@ -341,7 +341,44 @@ html , body{
     display: none;
 }
 
-/* end egs ad */
+/* left sidebar ad */
+#ad-section.active {
+    border: none;
+}
+.ad-wrap {
+    margin: -8px 2px 0 3px;
+    padding: 20px 6px 20px 8px;
+    background-color: #fff;
+}
+.ad-wrap .ad-header {
+    display: flex;
+    flex-direction: row;
+}
+.ad-wrap .ad-header:hover {
+    color: #1d6fa5;
+}
+.ad-logo {
+    margin-right: 7px;
+}
+.ad-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3498db;
+}
+.ad-title:hover {
+    opacity: .80;
+}
+.ad-wrap .badge {
+    color: #fff;
+    background-color: #00c9a7;
+    font-size: 75%;
+}
+.ad-wrap .ad-body {
+    margin-top: 8px;
+    color: #77838f;
+    font-size: 12px;
+}
+
 
 @media (min-width: 480px) {
     .nav_menu {
@@ -350,12 +387,15 @@ html , body{
 }
 .nav-md .container.body .col-md-3.left_col {
     min-height: 100%;
-    width: 240px;
+    width: 260px;
     padding: 0;
     position: absolute;
     display: -ms-flexbox;
     display: flex;
     z-index: 1
+}
+.left_col.scroll-view {
+    width: 100%;
 }
 .nav-md .container.body .col-md-3.left_col.menu_fixed {
     height: 100%;
@@ -943,7 +983,7 @@ a:focus {
 .nav>li>a {
     position: relative;
     display: block;
-    padding: 16px 15px 16px 40px;
+    padding: 16px 15px 16px 30px;
 }
 .nav.side-menu>li.current-page,
 .nav.side-menu>li.active {
