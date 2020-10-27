@@ -226,6 +226,7 @@ html , body{
     background: #3E5367;
     display: none
 }
+
 .nav-sm ul.nav.child_menu li {
     padding: 0 10px
 }
@@ -345,40 +346,60 @@ html , body{
 #ad-section.active {
     border: none;
 }
-.ad-wrap {
+.left-ad {
     margin: -8px 2px 0 3px;
     padding: 20px 6px 20px 8px;
     background-color: #fff;
+    min-width: 255px;
 }
-.ad-wrap .ad-header {
+.left-ad .top-badge {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    color: #8c98a4;
+    font-size: 80%;
+}
+.left-ad .ad-header {
     display: flex;
     flex-direction: row;
 }
-.ad-wrap .ad-header:hover {
+.left-ad .ad-header:hover {
     color: #1d6fa5;
 }
-.ad-logo {
+.left-ad .ad-logo {
     margin-right: 7px;
 }
-.ad-title {
+.left-ad .ad-title {
     font-size: 14px;
     font-weight: 500;
     color: #3498db;
 }
-.ad-title:hover {
+.left-ad .ad-title:hover {
     opacity: .80;
 }
-.ad-wrap .badge {
+.left-ad .badge {
     color: #fff;
     background-color: #00c9a7;
     font-size: 75%;
 }
-.ad-wrap .ad-body {
+.left-ad .ad-body {
     margin-top: 8px;
     color: #77838f;
     font-size: 12px;
 }
-
+#ad-section .ad-header {
+    padding: 0;
+}
+#ad-section .child_menu {
+    background: none;
+    min-width: 260px;
+}
+.nav-sm #ad-section .left-ad {
+    margin: 0;
+}
+.nav-sm .left-ad .top-badge {
+    margin-right: 7%;
+}
 
 @media (min-width: 480px) {
     .nav_menu {
@@ -406,7 +427,7 @@ body .container.body .right_col {
 }
 .nav-md .container.body .right_col {
     padding: 10px 20px 0 0;
-    margin-left: 240px
+    margin-left: 260px
 }
 .nav_title {
     width: 240px;
@@ -566,7 +587,7 @@ body {
 }
 .main_container .top_nav {
     display: block;
-    margin-left: 240px
+    margin-left: 260px
 }
 .no-padding {
     padding: 0 !important
@@ -1983,7 +2004,7 @@ span.right {
 }
 @media (min-width: 992px) {
     footer {
-        margin-left: 240px
+        margin-left: 260px
     }
     .tile_count .tile_stats_count {
         margin-bottom: 10px;
