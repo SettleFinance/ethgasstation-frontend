@@ -77,7 +77,10 @@
                   <li id="ad-section">
                       <a><i class="fa fa-university"></i><span class="link_text">Earn / Loan</span> <span class="fa fa-chevron-down"></span></a>
                       <ul class="nav child_menu">
-                          <div class="ad-wrap">
+                          <div class="left-ad">
+                              <div class="top-badge">
+                                Sponsored
+                              </div>
                               <a href="https://nexo.io/earn-crypto?utm_source=ethgasstation&utm_medium=fixed&utm_campaign=ethgasstation_button_oct20&utm_term=earnoncrypto&utm_content=button" target="_blank" class="ad-header">
                                   <img class="ad-logo" src="/images/nexo_icon.png" />
                                   <span class="ad-title">Earn up to 10% APY with Nexo</span>
