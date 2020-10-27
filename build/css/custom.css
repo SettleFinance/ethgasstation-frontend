@@ -368,6 +368,7 @@ html , body{
 }
 .left-ad .ad-logo {
     margin-right: 7px;
+    width: 20px;
 }
 .left-ad .ad-title {
     font-size: 14px;
