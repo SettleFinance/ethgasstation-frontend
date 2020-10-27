@@ -82,7 +82,7 @@
                                 Sponsored
                               </div>
                               <a href="https://nexo.io/earn-crypto?utm_source=ethgasstation&utm_medium=fixed&utm_campaign=ethgasstation_button_oct20&utm_term=earnoncrypto&utm_content=button" target="_blank" class="ad-header">
-                                  <img class="ad-logo" src="/images/nexo_icon.png" />
+                                  <img class="ad-logo" src="/images/nexo_logo.svg" />
                                   <span class="ad-title">Earn up to 10% APY with Nexo</span>
                               </a>
                               <a href="https://nexo.io/earn-crypto?utm_source=ethgasstation&utm_medium=fixed&utm_campaign=ethgasstation_button_oct20&utm_term=earnoncrypto&utm_content=button" target="_blank">
