@@ -73,6 +73,28 @@
                   <li>
                     <a href="/feedback.html"><i class ="fa fa-envelope"></i><span class="link_text">Feedback</span></a>
                   </li>
+                  <!-- Ad section -->
+                  <li id="ad-section">
+                      <a><i class="fa fa-university"></i><span class="link_text">Earn / Borrow</span> <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                          <div class="left-ad">
+                              <div class="top-badge">
+                                Sponsored
+                              </div>
+                              <a href="https://nexo.io/earn-crypto?utm_source=ethgasstation&utm_medium=fixed&utm_campaign=ethgasstation_button_oct20&utm_term=earnoncrypto&utm_content=button" target="_blank" class="ad-header">
+                                  <img class="ad-logo" src="/images/nexo_logo.svg" />
+                                  <span class="ad-title">Earn up to 12% APY with Nexo</span>
+                              </a>
+                              <a href="https://nexo.io/earn-crypto?utm_source=ethgasstation&utm_medium=fixed&utm_campaign=ethgasstation_button_oct20&utm_term=earnoncrypto&utm_content=button" target="_blank">
+                                  <span class="badge badge-success">$100M INSURANCE</span>
+                              </a>
+                              <div class="ad-body">
+                                  <p class="ad-text">Earn up to 12% interest per year on your Stablecoins, ETH & BTC, FIAT, and Crypto. Paid out daily. Get Started!</p>
+                              </div>
+                          </div>
+                      </ul>
+                  </li>
+
                 </ul>
               </div>
             </div>

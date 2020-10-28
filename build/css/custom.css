@@ -226,6 +226,7 @@ html , body{
     background: #3E5367;
     display: none
 }
+
 .nav-sm ul.nav.child_menu li {
     padding: 0 10px
 }
@@ -341,7 +342,68 @@ html , body{
     display: none;
 }
 
-/* end egs ad */
+/* left sidebar ad */
+#ad-section.active {
+    border: none;
+}
+.left-ad {
+    margin: -8px 2px 0 3px;
+    padding: 20px 6px 20px 8px;
+    background-color: #fff;
+    min-width: 255px;
+}
+.left-ad .top-badge {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    color: #8c98a4;
+    font-size: 80%;
+}
+.left-ad .ad-header {
+    display: flex;
+    flex-direction: row;
+}
+.left-ad .ad-header:hover {
+    color: #1d6fa5;
+}
+.left-ad .ad-logo {
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+}
+.left-ad .ad-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3498db;
+}
+.left-ad .ad-title:hover {
+    opacity: .80;
+}
+.left-ad .badge {
+    color: #fff;
+    background-color: #00c9a7;
+    font-size: 75%;
+}
+.left-ad .ad-body {
+    margin-top: 8px;
+    color: #77838f;
+    font-size: 12px;
+}
+#ad-section .ad-header {
+    padding: 0;
+}
+#ad-section .child_menu {
+    background: none;
+    min-width: 260px;
+}
+.nav-sm #ad-section .left-ad {
+    margin: 0;
+    border: 1px solid #2A3F54;
+    box-shadow: 0px 0 6px #2A3F54;
+}
+.nav-sm .left-ad .top-badge {
+    margin-right: 7%;
+}
 
 @media (min-width: 480px) {
     .nav_menu {
@@ -350,12 +412,15 @@ html , body{
 }
 .nav-md .container.body .col-md-3.left_col {
     min-height: 100%;
-    width: 240px;
+    width: 260px;
     padding: 0;
     position: absolute;
     display: -ms-flexbox;
     display: flex;
     z-index: 1
+}
+.left_col.scroll-view {
+    width: 100%;
 }
 .nav-md .container.body .col-md-3.left_col.menu_fixed {
     height: 100%;
@@ -366,7 +431,7 @@ body .container.body .right_col {
 }
 .nav-md .container.body .right_col {
     padding: 10px 20px 0 0;
-    margin-left: 240px
+    margin-left: 260px
 }
 .nav_title {
     width: 240px;
@@ -526,7 +591,7 @@ body {
 }
 .main_container .top_nav {
     display: block;
-    margin-left: 240px
+    margin-left: 260px
 }
 .no-padding {
     padding: 0 !important
@@ -943,7 +1008,7 @@ a:focus {
 .nav>li>a {
     position: relative;
     display: block;
-    padding: 16px 15px 16px 40px;
+    padding: 16px 15px 16px 30px;
 }
 .nav.side-menu>li.current-page,
 .nav.side-menu>li.active {
@@ -1943,7 +2008,7 @@ span.right {
 }
 @media (min-width: 992px) {
     footer {
-        margin-left: 240px
+        margin-left: 260px
     }
     .tile_count .tile_stats_count {
         margin-bottom: 10px;
