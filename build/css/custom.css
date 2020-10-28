@@ -397,6 +397,8 @@ html , body{
 }
 .nav-sm #ad-section .left-ad {
     margin: 0;
+    border: 1px solid #2A3F54;
+    box-shadow: 0px 0 6px #2A3F54;
 }
 .nav-sm .left-ad .top-badge {
     margin-right: 7%;
