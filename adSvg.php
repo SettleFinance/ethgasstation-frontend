@@ -1,8 +1,8 @@
 <div class="ad-wrap">
   <div class="ad-svg-cont">
-    <a href="https://yieldfarmer.substack.com/" target="_blank">
-      <img class="ad-desktop" src="/images/farmer-desktop.png" alt="Farmer Ad">
-      <!-- <img class="ad-mobile" src="/images/farmer-mobile.png" alt="Farmer Ad"> -->
+    <a href="https://polymarket.co/egs" target="_blank">
+      <img class="ad-desktop" src="/images/polymarket_728x90.svg" alt="Polymarket Ad">
+      <img class="ad-mobile" src="/images/polymarket_320x50.svg" alt="Polymarket Ad">
     </a>
   </div>
 </div>
