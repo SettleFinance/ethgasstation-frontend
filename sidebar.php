@@ -75,7 +75,7 @@
                   </li>
                   <!-- Ad section -->
                   <li id="ad-section">
-                      <a><i class="fa fa-university"></i><span class="link_text">Earn / Loan</span> <span class="fa fa-chevron-down"></span></a>
+                      <a><i class="fa fa-university"></i><span class="link_text">Earn / Borrow</span> <span class="fa fa-chevron-down"></span></a>
                       <ul class="nav child_menu">
                           <div class="left-ad">
                               <div class="top-badge">
