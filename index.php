@@ -151,7 +151,7 @@
           <!--/blogpost ends -->
 
           <!-- svg ad section -->
-          <?php require('./adSvg.php'); ?>
+          <!-- <?php require('./adSvg.php'); ?> -->
           <!--/svg ad section -->
 
           <!-- 2nd row starts -->
