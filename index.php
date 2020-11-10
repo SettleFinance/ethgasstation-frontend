@@ -64,6 +64,11 @@
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134672026-1"></script>
+
+    <!-- google adsense & admanager -->
+    <script data-ad-client="ca-pub-5591450160498445" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- <script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script> -->
+
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
