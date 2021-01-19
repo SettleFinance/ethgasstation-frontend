@@ -74,7 +74,7 @@
                     <a href="/feedback.html"><i class ="fa fa-envelope"></i><span class="link_text">Feedback</span></a>
                   </li>
                   <!-- Ad section -->
-                  <!-- <li id="ad-section">
+                  <li id="ad-section">
                       <a><i class="fa fa-university"></i><span class="link_text">Earn / Borrow</span> <span class="fa fa-chevron-down"></span></a>
                       <ul class="nav child_menu">
                           <div class="left-ad">
@@ -93,7 +93,7 @@
                               </div>
                           </div>
                       </ul>
-                  </li> -->
+                  </li>
 
                 </ul>
               </div>
