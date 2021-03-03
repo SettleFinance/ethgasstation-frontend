@@ -1,8 +1,8 @@
 <div class="ad-wrap">
   <div class="ad-svg-cont">
-    <a href="https://polymarket.co/egs" target="_blank">
-      <img class="ad-desktop" src="/images/polymarket_desktop.svg" alt="Polymarket Ad">
-      <img class="ad-mobile" src="/images/polymarket_mobile.svg" alt="Polymarket Ad">
+    <a href="https://bit.ly/3kDQXnc" target="_blank">
+      <img class="ad-desktop" src="/images/farmer_desktop_purple.svg" alt="DFP Farmer Banner">
+      <img class="ad-mobile" src="/images/farmer_mobile_purple.svg" alt="DFP Farmer Banner">
     </a>
   </div>
 </div>

@@ -67,7 +67,7 @@
 
     <!-- google adsense & admanager -->
     <!-- <script data-ad-client="ca-pub-5591450160498445" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <!-- <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 
     <script>
       window.googletag = window.googletag || {cmd: []};
@@ -80,7 +80,7 @@
         googletag.pubads().collapseEmptyDivs();
         googletag.enableServices();
       });
-    </script>
+    </script> -->
 
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -169,9 +169,9 @@
           <!--/blogpost ends -->
 
           <!-- svg ad section -->
-          <!-- <?php require('./adSvg.php'); ?> -->
+          <?php require('./adSvg.php'); ?>
 
-          <?php require('./adByGoogle.php'); ?>
+          <!-- <?php require('./adByGoogle.php'); ?> -->
           <!--/svg ad section -->
 
           <!-- 2nd row starts -->
