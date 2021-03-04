@@ -171,7 +171,6 @@
           <!-- svg ad section -->
           <?php require('./adSvg.php'); ?>
 
-          <!-- <?php require('./adByGoogle.php'); ?> -->
           <!--/svg ad section -->
 
           <!-- 2nd row starts -->
