@@ -86,7 +86,6 @@
                  <div class="blog_content">
 
                   <p><?php echo EGS_TITLE; ?> aims to increase the transparency of gas prices, transaction confirmation times, and miner policies on the Ethereum network. The long term success of Ethereum depends on a healthy and efficient market for the price of gas. We hope this site will help people get the best gas price.</p></br>
-                  <p>This is an open source project and this node is not an official Eth Gas Station node. The real EthGasStation exists at <a href="//ethgasstation.info">ethgasstation.info</a>.
                   </div>
                   <div class="clearfix"></div>
                 </div>
