@@ -338,7 +338,7 @@ html , body{
     width: 100%;
     cursor: pointer;
 }
-.ad-mobile {
+.promo-mobile {
     display: none;
 }
 
@@ -5050,10 +5050,10 @@ ul.notifications {
         margin-bottom: 5px;
         display: inline-block
     }
-    .ad-desktop {
+    .promo-desktop {
         display: none;
     }
-    .ad-mobile {
+    .promo-mobile {
         display: block;
     }
 }
