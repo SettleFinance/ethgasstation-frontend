@@ -334,7 +334,7 @@ html , body{
 }
 
 /* egs ad */
-.ad-svg-cont img {
+.promo-svg-cont img {
     width: 100%;
     cursor: pointer;
 }
@@ -5041,7 +5041,7 @@ ul.notifications {
     .blogPost {
         margin-right: 10px;
     }
-    .ad-wrap {
+    .promo-wrap {
         margin-right: 20px;
     }
 }
