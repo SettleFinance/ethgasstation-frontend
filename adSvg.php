@@ -5,9 +5,9 @@
       <img class="promo-desktop" src="/images/farmer_desktop_purple.svg" alt="DFP Farmer Newsletter">
       <img class="promo-mobile" src="/images/farmer_mobile_purple.svg" alt="DFP Farmer Newsletter">
     </a> -->
-    <a href="https://www.chainlinklabs.com/careers?utm_source=eth-gas-station&utm_medium=banner-v1&utm_campaign=careers" target="_blank">
-      <img class="promo-desktop" src="/images/chainlink/v2_desktop.svg" alt="Chainlink Hiring Banner">
-      <img class="promo-mobile" src="/images/chainlink/v2_mobile.svg" alt="Chainlink Hiring Banner">
+    <a href="http://bit.ly/3eLYeAE" target="_blank">
+      <img class="promo-desktop" src="/images/golem/banner_desktop.svg" alt="Golem Banner">
+      <img class="promo-mobile" src="/images/golem/banner_mobile.svg" alt="Golem Banner">
     </a>
   </div>
 </div>
