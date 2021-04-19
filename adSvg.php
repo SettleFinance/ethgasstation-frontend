@@ -10,5 +10,6 @@
     </a>
     <a class="promo-mobile" href="https://bit.ly/3r3EeMi" target="_blank">
     <img class="promo-mobile" src="/images/golem/banner_mobile.svg" alt="Golem Banner">
+    </a>
   </div>
 </div>
