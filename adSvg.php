@@ -26,7 +26,7 @@
       $golemAd->mobileImg = '/images/golem/banner_mobile.svg';
       $golemAd->alt = 'Golem Banner';
 
-      $ads = array($golemAd, $defiPulse);
+      $ads = array($golemAd);
 
       $arrLength = count($ads) - 1;
       $index = mt_rand(0, $arrLength);
