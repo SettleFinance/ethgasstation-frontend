@@ -14,20 +14,29 @@
         public $alt;
       }
 
+      $defiPulse = new ad();
+      $defiPulse->href = 'http://bit.ly/3c1v8ds';
+      $defiPulse->desktopImg = '/images/farmer_desktop_purple.svg';
+      $defiPulse->mobileImg = '/images/farmer_mobile_purple.svg';
+      $defiPulse->alt = 'DFP Farmer Newsletter';
+
       $golemAd = new ad();
       $golemAd->href = 'https://bit.ly/3r3EeMi';
       $golemAd->desktopImg = '/images/golem/banner_desktop.svg';
       $golemAd->mobileImg = '/images/golem/banner_mobile.svg';
-      $golemAd->alt = 'Golem Banner3';
+      $golemAd->alt = 'Golem Banner';
 
-      $ads = array($golemAd);
+      $ads = array($golemAd, $defiPulse);
+
+      $arrLength = count($ads) - 1;
+      $index = mt_rand(0, $arrLength);
     ?>
 
-    <a class="promo-desktop" href="<?php echo ($ads[0]->href); ?>" target="_blank">
-      <img class="promo-desktop" src="<?php echo ($ads[0]->desktopImg); ?>" alt="<?php echo ($ads[0]->alt); ?>">
+    <a class="promo-desktop" href="<?php echo ($ads[$index]->href); ?>" target="_blank">
+      <img class="promo-desktop" src="<?php echo ($ads[$index]->desktopImg); ?>" alt="<?php echo ($ads[$index]->alt); ?>">
     </a>
-    <a class="promo-mobile" href="<?php echo ($ads[0]->href); ?>" target="_blank">
-    <img class="promo-mobile" src="<?php echo ($ads[0]->mobileImg); ?>" alt="<?php echo ($ads[0]->alt); ?>">
+    <a class="promo-mobile" href="<?php echo ($ads[$index]->href); ?>" target="_blank">
+    <img class="promo-mobile" src="<?php echo ($ads[$index]->mobileImg); ?>" alt="<?php echo ($ads[$index]->alt); ?>">
     </a>
   </div>
 </div>
