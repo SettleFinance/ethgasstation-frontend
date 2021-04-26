@@ -21,7 +21,7 @@
       $defiPulse->alt = 'DFP Farmer Newsletter';
 
       $golemAd = new ad();
-      $golemAd->href = 'https://bit.ly/3r3EeMi';
+      $golemAd->href = 'https://bit.ly/3eDtXCy';
       $golemAd->desktopImg = '/images/golem/banner_desktop.svg';
       $golemAd->mobileImg = '/images/golem/banner_mobile.svg';
       $golemAd->alt = 'Golem Banner';
