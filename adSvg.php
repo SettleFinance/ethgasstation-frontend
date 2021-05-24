@@ -22,21 +22,7 @@
       $defiPulse->mobileImg = '/images/farmer_mobile_purple.svg';
       $defiPulse->alt = 'DFP Farmer Newsletter';
 
-      $solanaAd = new ad();
-      $solanaAd->desktopLink = 'https://bit.ly/3nFxy76';
-      $solanaAd->mobileLink = 'https://bit.ly/3nFxy76';
-      $solanaAd->desktopImg = '/images/solana/solana_desktop.svg';
-      $solanaAd->mobileImg = '/images/solana/solana_mobile.svg';
-      $solanaAd->alt = 'Solana Banner';
-
-      $perpAd = new ad();
-      $perpAd->desktopLink = 'https://bit.ly/3y68DOP';
-      $perpAd->mobileLink = 'https://bit.ly/3uJJRlB';
-      $perpAd->desktopImg = '/images/perp/banner_desktop.png';
-      $perpAd->mobileImg = '/images/perp/banner_mobile.png';
-      $perpAd->alt = 'Perp.fi Banner';
-
-      $ads = array($solanaAd, $perpAd);
+      $ads = array($defiPulse);
 
       $arrLength = count($ads) - 1;
       $index = mt_rand(0, $arrLength);
